@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas text-text-light font-sans overflow-x-hidden m-0 p-0;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-white text-[2.5rem] lg:text-[3.5rem] font-extrabold uppercase leading-tight;
+  }
+  .accent-text {
+    @apply text-accent font-serif italic normal-case font-normal;
+  }
+  .btn-neon {
+    @apply bg-accent text-black font-bold px-8 py-3 rounded-full flex items-center gap-2 hover:bg-[#b0e600] transition-colors w-max;
+  }
+  .section-subtitle {
+    @apply text-accent text-sm font-bold tracking-widest uppercase mb-4 flex items-center gap-2;
+  }
+  .section-subtitle::before {
+    content: '✦';
+    @apply text-accent;
+  }
+}
